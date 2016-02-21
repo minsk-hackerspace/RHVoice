@@ -21,7 +21,6 @@ Files: src/core/config.cpp
  src/core/item.cpp
  src/core/language.cpp
  src/core/lts.cpp
- src/core/mage_hts_engine_impl.cpp
  src/core/params.cpp
  src/core/path.cpp
  src/core/phoneme_set.cpp
@@ -30,6 +29,7 @@ Files: src/core/config.cpp
  src/core/speech_processor.cpp
  src/core/speech_stream.cpp
  src/core/std_hts_engine_impl.cpp
+ src/core/ukrainian.cpp
  src/core/unicode.cpp
  src/core/userdict.cpp
  src/core/utterance.cpp
@@ -60,7 +60,6 @@ Files: src/core/config.cpp
  src/include/core/item.hpp
  src/include/core/language.hpp
  src/include/core/lts.hpp
- src/include/core/mage_hts_engine_impl.hpp
  src/include/core/params.hpp
  src/include/core/path.hpp
  src/include/core/phoneme_set.hpp
@@ -82,6 +81,7 @@ Files: src/core/config.cpp
  src/include/core/tone.hpp
  src/include/core/trie.hpp
  src/include/core/tts_markup.hpp
+ src/include/core/ukrainian.hpp
  src/include/core/unicode.hpp
  src/include/core/userdict.hpp
  src/include/core/utf.hpp
@@ -140,6 +140,7 @@ Copyright: 2010-2013, Olga Yakovleva <yakovleva.o.v@gmail.com>
   2013, Olga Yakovleva <yakovleva.o.v@gmail.com>
   2013-2014, Olga Yakovleva <yakovleva.o.v@gmail.com>
   2014, Olga Yakovleva <yakovleva.o.v@gmail.com>
+  2016, Olga Yakovleva <yakovleva.o.v@gmail.com>
 License: LGPL-3+
  FIXME
 
@@ -221,33 +222,6 @@ Copyright: 2010-2011, Olga Yakovleva <yakovleva.o.v@gmail.com>
 License: GPL-3+
  FIXME
 
-Files: src/third-party/mage/Constants.h
- src/third-party/mage/Distribution.h
- src/third-party/mage/Frame.h
- src/third-party/mage/FrameQueue.cpp
- src/third-party/mage/FrameQueue.h
- src/third-party/mage/Label.cpp
- src/third-party/mage/Label.h
- src/third-party/mage/LabelQueue.cpp
- src/third-party/mage/LabelQueue.h
- src/third-party/mage/MSDistribution.h
- src/third-party/mage/MathFunctions.cpp
- src/third-party/mage/MathFunctions.h
- src/third-party/mage/MemQueue.h
- src/third-party/mage/Model.cpp
- src/third-party/mage/Model.h
- src/third-party/mage/ModelQueue.cpp
- src/third-party/mage/ModelQueue.h
- src/third-party/mage/State.h
- src/third-party/mage/Vocoder.cpp
- src/third-party/mage/Vocoder.h
- src/third-party/mage/hts.h
- src/third-party/mage/mage.cpp
- src/third-party/mage/mage.h
-Copyright: 2011, University of Mons :
-License: GPL
- FIXME
-
 Files: src/third-party/tclap/tclap/ArgException.h
  src/third-party/tclap/tclap/CmdLineOutput.h
  src/third-party/tclap/tclap/Constraint.h
@@ -288,9 +262,6 @@ Files: site_scons/RHVoicePackaging/__init__.py
  src/core/userdict_parser.h
  src/java/android/service/jni/native.h
  src/java/android/service/src/com/github/olga_yakovleva/rhvoice/android/FutureDataResult.java
- src/third-party/mage/fft-sptk.h
- src/third-party/mage/getmem-sptk.h
- src/third-party/mage/mlsacheck-sptk.h
 Copyright: *No copyright*
 License: UNKNOWN
  FIXME
@@ -323,13 +294,6 @@ Copyright: 2006, 2009 Marcin Kalicinski
 License: UNKNOWN
  FIXME
 
-Files: src/third-party/mage/fft-sptk.cpp
- src/third-party/mage/getmem-sptk.cpp
- src/third-party/mage/mlsacheck-sptk.cpp
-Copyright: 1984-2007, Tokyo Institute of Technology
-License: BSD-3-clause
- FIXME
-
 Files: src/third-party/sonic/sonic.c
  src/third-party/sonic/sonic.h
 Copyright: 2010, Bill Cox
@@ -340,17 +304,6 @@ Files: src/third-party/tclap/tclap/ArgTraits.h
  src/third-party/tclap/tclap/StandardTraits.h
 Copyright: 2007, Daniel Aarno, Michael E. Smoot
 License: UNKNOWN
- FIXME
-
-Files: src/third-party/mage/pa_memorybarrier.h
-Copyright: 1999-2000, Ross Bencina and Phil Burk
-License: Expat
- FIXME
-
-Files: src/third-party/mage/hts.cpp
-Copyright: 2001-2011, Nagoya Institute of Technology
-  2011, University of Mons :
-License: GPL
  FIXME
 
 Files: src/bin/rhvoice-client.c
