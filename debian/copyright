@@ -3,7 +3,7 @@ Upstream-Name: rhvoice
 Source: https://github.com/Olga-Yakovleva/RHVoice
 
 Files: *
-Copyright: 2010-2015 Olga Yakovleva <yakovleva.o.v@gmail.com>
+Copyright: 2010-2016 Olga Yakovleva <yakovleva.o.v@gmail.com>
 License: LGPL-3+
 
 Files: src/bin/rhvoice-client.c
@@ -27,22 +27,6 @@ Copyright:
  2001-2011 Nagoya Institute of Technology, Department of Computer Science
  2001-2008 Tokyo Institute of Technology, Interdisciplinary Graduate School of Science and Engineering
 License: BSD-3-clause
-
-Files: src/third-party/mage/*-sptk*
-Copyright:
- 1996-2008 Nagoya Institute of Technology, Department of Computer Science
- 1984-2007 Tokyo Institute of Technology, Interdisciplinary Graduate School of Science and Engineering
-License: BSD-3-clause
-
-Files: src/third-party/mage/pa_memorybarrier.h
-Copyright:
- 1999-2000, Ross Bencina and Phil Burk
- 2007 Bjorn Roche, XO Audio, LLC
-License: Expat
-
-Files: src/third-party/mage/*
-Copyright: 2011 University of Mons
-License: GPL-3+
 
 Files: src/third-party/rapidxml/*
 Copyright: 2006, 2009 Marcin Kalicinski
