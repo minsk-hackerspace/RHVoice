@@ -6,41 +6,47 @@ Files: *
 Copyright: 2010-2015 Olga Yakovleva <yakovleva.o.v@gmail.com>
 License: LGPL-3+
 
+Files: src/bin/rhvoice-client.c
+Copyright: 2011 Dmitri Paduchikh <dpaduchikh@gmail.com>
+License: GPL-3+
+
+Files: src/bin/main.cpp
+Copyright:
+ 2009-2011 Olga Yakovleva <yakovleva.o.v@gmail.com>
+ 2011 Dmitri Paduchikh <dpaduchikh@gmail.com>
+License: GPL-3+
+
 Files: debian/*
-Copyright: 2015 Yauhen Kharuzhy <jekhor@gmail.com>
+Copyright:
+ 2015 Yauhen Kharuzhy <jekhor@gmail.com>
+ 2015, 2016 Andrew Shadura <andrewsh@debian.org>
 License: LGPL-3+
 
 Files: src/third-party/hts_engine/*
-Copyright: 2001-2011 Nagoya Institute of Technology, Department of Computer Science
-  2001-2008 Tokyo Institute of Technology, Interdisciplinary Graduate School of Science and Engineering
+Copyright:
+ 2001-2011 Nagoya Institute of Technology, Department of Computer Science
+ 2001-2008 Tokyo Institute of Technology, Interdisciplinary Graduate School of Science and Engineering
 License: BSD-3-clause
 
 Files: src/third-party/mage/*-sptk*
-Copyright: 1996-2008 Nagoya Institute of Technology, Department of Computer Science
+Copyright:
+ 1996-2008 Nagoya Institute of Technology, Department of Computer Science
  1984-2007 Tokyo Institute of Technology, Interdisciplinary Graduate School of Science and Engineering
 License: BSD-3-clause
+
+Files: src/third-party/mage/pa_memorybarrier.h
+Copyright:
+ 1999-2000, Ross Bencina and Phil Burk
+ 2007 Bjorn Roche, XO Audio, LLC
+License: Expat
 
 Files: src/third-party/mage/*
 Copyright: 2011 University of Mons
 License: GPL-3+
-  MAGE / pHTS is free software: you can redistribute it and/or modify it under the terms
-  of the GNU General Public License as published by the Free Software Foundation, either
-  version 3 of the license, or any later version.
-  .
-  MAGE / pHTS is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-  See the GNU General Public License for more details.
-  .
-  You should have received a copy of the GNU General Public License along with MAGE / pHTS.
-  If not, see http://www.gnu.org/licenses/
-  .
-  On Debian systems, the full text of the GNU General Public
-  License version 3 can be found in the file
-  `/usr/share/common-licenses/GPL-3'.
 
 Files: src/third-party/rapidxml/*
-Copyright: 2006, 2007 Marcin Kalicinski
-License: BSL-1.0 or MIT
+Copyright: 2006, 2009 Marcin Kalicinski
+License: BSL-1.0 or Expat
 
 Files: src/third-party/sonic/*
 Copyright: 2010 Bill Cox
@@ -70,13 +76,17 @@ License: LGPL-2.1+ with sonic exception
   `/usr/share/common-licenses/LGPL-2.1'.
 
 Files: src/third-party/tclap/*
-Copyright: 2003—2005, Michael E. Smoot
-  2004, Daniel Aarno
-License: MIT
+Copyright: 2003—2005, 2007, Michael E. Smoot
+  2004, 2007, Daniel Aarno
+License: Expat
 
 Files: src/third-party/utf8/*
 Copyright: 2006 Nemanja Trifunovic
 License: BSL-1.0
+
+Files: site_scons/SimpleConfigParser.py
+Copyright: 2009-2010 Philippe Lagadec
+License: Expat
 
 License: LGPL-3+
   This program is free software: you can redistribute it and/or modify
@@ -95,6 +105,22 @@ License: LGPL-3+
   On Debian systems, the full text of the GNU Lesser General Public
   License version 3 can be found in the file
   `/usr/share/common-licenses/LGPL-3'.
+
+License: GPL-3+
+  This program is free software: you can redistribute it and/or modify it under the terms
+  of the GNU General Public License as published by the Free Software Foundation, either
+  version 3 of the license, or any later version.
+  .
+  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU General Public License for more details.
+  .
+  You should have received a copy of the GNU General Public License along with this program.
+  If not, see http://www.gnu.org/licenses/
+  .
+  On Debian systems, the full text of the GNU General Public
+  License version 3 can be found in the file
+  `/usr/share/common-licenses/GPL-3'.
 
 License: BSD-3-clause
   Redistribution and use in source and binary forms, with or
@@ -125,7 +151,7 @@ License: BSD-3-clause
   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
   POSSIBILITY OF SUCH DAMAGE.
 
-License: MIT
+License: Expat
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
   in the Software without restriction, including without limitation the rights
