@@ -2,6 +2,7 @@ Source: rhvoice
 Section: sound
 Priority: optional
 Maintainer: Yauhen Kharuzhy <jekhor@gmail.com>
+Uploaders: Andrew Shadura <andrewsh@debian.org>
 Build-Depends: debhelper (>= 9),
                expat,
                flite1-dev,
