@@ -39,3 +39,12 @@
      env_args["package_name"]="RHVoice"
      env_args["CPPDEFINES"]=[("RHVOICE","1")]
      env=Environment(**env_args)
+@@ -213,7 +213,7 @@
+             env["audio_libs"].add("libao")
+         if conf.CheckPKG("portaudio-2.0"):
+             env["audio_libs"].add("portaudio")
+-#        has_giomm=conf.CheckPKG("giomm-2.4")
++        has_giomm=conf.CheckPKG("giomm-2.4")
+     if env["PLATFORM"]=="win32":
+         env.AppendUnique(LIBS="kernel32")
+     conf.Finish()
