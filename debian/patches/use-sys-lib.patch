@@ -1,0 +1,30 @@
+--- a/src/core/SConscript
++++ b/src/core/SConscript
+@@ -17,7 +17,7 @@
+ import os
+ import os.path
+ 
+-Import("env","libsonic","libhts_engine")
++Import("env","libhts_engine")
+ local_env=env.Clone()
+ local_env["libversion"]="0.0.0"
+ local_env["liblevel"]=1
+@@ -52,7 +52,7 @@
+ 	 "hts_label.cpp",
+ 	 "hts_labeller.cpp",
+ 	 "speech_processor.cpp"]
+-for lib in [libhts_engine,libsonic]:
++for lib in [libhts_engine]:
+ 	src.extend(lib)
+ libRHVoice_core=local_env.BuildLibrary("RHVoice_core",src)
+ if env["PLATFORM"]!="win32":
+--- a/src/third-party/SConscript
++++ b/src/third-party/SConscript
+@@ -18,6 +18,6 @@
+ 
+ Import("env")
+ 
+-for subdir in ["sonic","hts_engine"]:
++for subdir in ["hts_engine"]:
+ 	SConscript(os.path.join(subdir,"SConscript"),
+ 			   exports={"env":env})

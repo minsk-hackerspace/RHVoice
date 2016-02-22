@@ -1,2 +1,7 @@
 src/third-party/utf8/utf8/*
 src/third-party/utf8/*.h
+src/third-party/rapidxml/rapidxml/*
+# src/third-party/hts_engine/*
+src/third-party/sonic/*
+src/third-party/tclap/tclap/*
+src/third-party/SConscript
