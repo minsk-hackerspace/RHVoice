@@ -4,4 +4,4 @@ src/third-party/rapidxml/rapidxml/*
 # src/third-party/hts_engine/*
 src/third-party/sonic/*
 src/third-party/tclap/tclap/*
-src/third-party/SConscript
+# src/third-party/SConscript
