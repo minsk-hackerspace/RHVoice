@@ -1,4 +1,4 @@
-rhvoice (0.5.1~pre-20151020-1) unstable; urgency=low
+rhvoice (0.5.1~git20160216-1) unstable; urgency=low
 
   * Initial release (Closes: #802852).
 
