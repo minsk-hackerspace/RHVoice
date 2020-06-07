@@ -6,43 +6,44 @@
  
 -Import("env","libsonic","libhts_engine")
 +Import("env","libhts_engine")
+ if env["enable_mage"]:
+ 	Import("libmage")
  local_env=env.Clone()
- local_env["libversion"]="0.0.0"
- local_env["liblevel"]=1
-@@ -52,7 +52,7 @@
- 	 "hts_label.cpp",
- 	 "hts_labeller.cpp",
- 	 "speech_processor.cpp"]
+@@ -66,7 +66,7 @@
+ 		 "pitch.cpp"]
+ if local_env["enable_mage"]:
+ 	src.append("mage_hts_engine_impl.cpp")
 -for lib in [libhts_engine,libsonic]:
 +for lib in [libhts_engine]:
  	src.extend(lib)
- libRHVoice_core=local_env.BuildLibrary("RHVoice_core",src)
- if env["PLATFORM"]!="win32":
+ if local_env["enable_mage"]:
+ 	src.extend(libmage)
 --- a/src/third-party/SConscript
 +++ b/src/third-party/SConscript
-@@ -18,6 +18,6 @@
+@@ -18,7 +18,7 @@
  
  Import("env")
  
--for subdir in ["sonic","hts_engine"]:
-+for subdir in ["hts_engine"]:
- 	SConscript(os.path.join(subdir,"SConscript"),
- 			   exports={"env":env})
+-subdirs=["sonic","hts_engine"]
++subdirs=["hts_engine"]
+ if env["enable_mage"]:
+ 	subdirs.append("mage")
+ for subdir in subdirs:
 --- a/SConstruct
 +++ b/SConstruct
-@@ -143,7 +143,7 @@
+@@ -177,7 +177,7 @@
+     else:
          env_args["tools"]=["default","installer"]
      env_args["tools"].extend(["textfile","library"])
-     env_args["variables"]=vars
 -    env_args["LIBS"]=[]
 +    env_args["LIBS"]=["-lsonic"]
      env_args["package_name"]="RHVoice"
      env_args["CPPDEFINES"]=[("RHVOICE","1")]
      env=Environment(**env_args)
-@@ -213,7 +213,7 @@
-             env["audio_libs"].add("libao")
-         if conf.CheckPKG("portaudio-2.0"):
-             env["audio_libs"].add("portaudio")
+@@ -276,7 +276,7 @@
+             conf.CheckSpdVersion()
+     else:
+         env["audio_libs"]=[]
 -#        has_giomm=conf.CheckPKG("giomm-2.4")
 +        has_giomm=conf.CheckPKG("giomm-2.4")
      if env["PLATFORM"]=="win32":
