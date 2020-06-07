@@ -1,5 +1,5 @@
-rhvoice (0.5.1~git20160216-1) unstable; urgency=low
+rhvoice (1.2.2-1) unstable; urgency=medium
 
   * Initial release (Closes: #802852).
 
- -- Yauhen Kharuzhy <jekhor@gmail.com>  Wed, 21 Oct 2015 01:20:33 +0300
+ -- Yauhen Kharuzhy <jekhor@gmail.com>  Sun, 07 Jun 2020 15:25:00 +0300
