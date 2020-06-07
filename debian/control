@@ -3,7 +3,7 @@ Section: sound
 Priority: optional
 Maintainer: Yauhen Kharuzhy <jekhor@gmail.com>
 Uploaders: Andrew Shadura <andrewsh@debian.org>
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper (>= 13),
                expat,
                flite1-dev,
                libao-dev,
