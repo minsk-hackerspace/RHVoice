@@ -21,5 +21,4 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	scons DESTDIR=$(CURDIR)/debian/tmp install
-	for lib in $(CURDIR)/debian/tmp/usr/lib/*/*.so.*; do l=`basename $$lib`; ln -s "$$l" "$${lib%%.so.*.*}.so"; ln -s "$$l" "$${lib%%.[0-9].[0-9]}"; done
 
