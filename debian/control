@@ -44,7 +44,7 @@ Description: free and open source speech synthesizer - libraries
  parametric synthesis. It relies on existing open
  source speech technologies (mainly HTS and related software).
  .
- This package contans shared libraries.
+ This package contains shared libraries.
 
 Package: librhvoice-dev
 Architecture: any
