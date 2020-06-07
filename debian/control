@@ -19,7 +19,7 @@ Build-Depends: debhelper (>= 9),
                pkg-config,
                portaudio19-dev,
                scons
-Standards-Version: 3.9.6
+Standards-Version: 4.5.0
 Homepage: https://github.com/Olga-Yakovleva/RHVoice
 Vcs-Git: https://github.com/minsk-hackerspace/RHVoice.git
 Vcs-Browser: https://github.com/minsk-hackerspace/RHVoice
